@@ -25,6 +25,9 @@ body {
     width: 100vw;
 }
 
+
+/* !--------------- Starts Header Navbar Styling -------------- */
+
 header {
     width: 100vw;
     height: auto;
@@ -40,42 +43,46 @@ header .navbar {
     position: fixed;
 }
 
-.navbar .left {
+header .navbar .left {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.navbar .left .logo {
+header .navbar .left .logo {
     height: 100%;
 }
 
-.navbar .left i {
+header .navbar .left i {
     font-size: 1.6rem;
     color: var(--nav-bar-link);
 }
 
-.navbar .right ul {
+header .navbar .right ul {
     display: flex;
     gap: 20px;
 }
 
-.navbar .right ul li {
+header .navbar .right ul li {
     list-style: none;
     font-size: 1.6rem;
     font-weight: 700;
 }
 
-.navbar .right ul li a {
+header .navbar .right ul li a {
     text-decoration: none;
     color: var(--nav-bar-link);
 }
 
-.navbar .right ul li a:hover {
+header .navbar .right ul li a:hover {
     color: var(--nav-bar-link-hover);
 }
 
-.navbar .right ul li a:active {
+header .navbar .right ul li a:active {
     color: var(--nav-bar-link-hover);
 }
+
+/* !--------------- Finishes Header Navbar Styling -------------- */
+
+
