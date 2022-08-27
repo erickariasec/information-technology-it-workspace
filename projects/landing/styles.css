@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    height: 1000vh;
+    height: 100vh;
     width: 100vw;
     max-width: 1200px;
     margin: 0 auto;
@@ -68,6 +68,11 @@ header .navbar .left .logo {
 header .navbar .left i {
     font-size: 1.6rem;
     color: var(--nav-bar-link);
+}
+
+header .navbar .left i:hover {
+    color: var(--nav-bar-link-hover);
+    cursor: pointer;
 }
 
 header .navbar .right ul {
