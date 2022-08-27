@@ -6,6 +6,7 @@
 
     /* Colors */
     --nav-bar-link: #1C3661;
+    --nav-bar-link-hover: #4594D9;
 }
 
 * {
@@ -69,4 +70,12 @@ header .navbar {
 .navbar .right ul li a {
     text-decoration: none;
     color: var(--nav-bar-link);
+}
+
+.navbar .right ul li a:hover {
+    color: var(--nav-bar-link-hover);
+}
+
+.navbar .right ul li a:active {
+    color: var(--nav-bar-link-hover);
 }
