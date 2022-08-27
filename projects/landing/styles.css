@@ -7,6 +7,11 @@
     /* Colors */
     --nav-bar-link: #1C3661;
     --nav-bar-link-hover: #4594D9;
+
+    --home-description-color: #444444;
+    --home-button-color: #034C8C;
+
+    --white-color: #fff;
 }
 
 * {
@@ -21,26 +26,32 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 1000vh;
     width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 /* !--------------- Starts Header Navbar Styling -------------- */
 
 header {
-    width: 100vw;
-    height: auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    padding: 15px;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
 }
 
 header .navbar {
     width: 100%;
+    max-width: 1200px;
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: fixed;
 }
 
 header .navbar .left {
@@ -86,3 +97,64 @@ header .navbar .right ul li a:active {
 /* !--------------- Finishes Header Navbar Styling -------------- */
 
 
+.main-section {
+    width: 100vw;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-section .left {
+    width: 675px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-section .left .title {
+    font-size: 5.5rem;
+    color: var(--nav-bar-link);
+}
+
+.main-section .left .description {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--home-description-color);
+}
+
+.main-section .left .invite-question {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--nav-bar-link);
+}
+
+.main-section .left .button-postularse {
+    padding: 20px;
+    width: 200px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--home-button-color);
+    border: none;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.main-section .left .button-postularse:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px 3px var(--nav-bar-link);
+    cursor: pointer;
+}
+
+.main-section .right {
+    width: 525px;
+}
+
+.main-section .right img {
+    width: 100%;
+}
