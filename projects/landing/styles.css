@@ -8,7 +8,7 @@
     --nav-bar-link: #1C3661;
     --nav-bar-link-hover: #4594D9;
 
-    --home-description-color: #444444;
+    --description-color: #444444;
     --home-button-color: #034C8C;
 
     --que-hacemos-bg-description: #f6f9ff;
@@ -131,7 +131,7 @@ header .navbar .right ul li a:active {
 .main-section .left .description {
     font-size: 2.8rem;
     font-weight: 500;
-    color: var(--home-description-color);
+    color: var(--description-color);
 }
 
 .main-section .left .invite-question {
@@ -195,7 +195,9 @@ header .navbar .right ul li a:active {
 }
 
 .que-hacemos-section .left .description {
+    color: var(--description-color);
     font-size: 1.6rem;
+    font-weight: 500;
     line-height: 22px;
 }
 
