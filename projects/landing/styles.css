@@ -11,6 +11,8 @@
     --home-description-color: #444444;
     --home-button-color: #034C8C;
 
+    --que-hacemos-bg-description: #f6f9ff;
+
     --white-color: #fff;
 }
 
@@ -23,6 +25,7 @@
 html {
     font-size: 62.5%;
     font-family: var(--ubuntu-font);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,7 +37,6 @@ body {
 
 
 /* !--------------- Starts Header Navbar Styling -------------- */
-
 header {
     width: 100%;
     max-width: 1200px;
@@ -98,10 +100,10 @@ header .navbar .right ul li a:hover {
 header .navbar .right ul li a:active {
     color: var(--nav-bar-link-hover);
 }
-
 /* !--------------- Finishes Header Navbar Styling -------------- */
 
 
+/* !--------------- Starts Main (Home) Styling -------------- */
 .main-section {
     width: 100vw;
     max-width: 1200px;
@@ -163,3 +165,41 @@ header .navbar .right ul li a:active {
 .main-section .right img {
     width: 100%;
 }
+/* !--------------- Finishes Main (Home) Styling -------------- */
+
+
+/* !--------------- Starts Cómo lo Hacemos Section Styling -------------- */
+.que-hacemos-section {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+}
+
+.que-hacemos-section .left {
+    width: 1500px;
+    padding: 40px;
+    background-color: var(--que-hacemos-bg-description);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.que-hacemos-section .left .subtitle-question {
+    font-size: 1.4rem;
+    color: var(--home-button-color);
+}
+
+.que-hacemos-section .left .subtitle-description {
+    font-size: 2.4rem;
+    color: var(--nav-bar-link);
+}
+
+.que-hacemos-section .left .description {
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+
+.que-hacemos-section .right img {
+    width: 100%;
+}
+/* !--------------- Finishes Cómo lo Hacemos Section Styling -------------- */
