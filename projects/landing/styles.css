@@ -168,9 +168,9 @@ header .navbar .right ul li a:active {
 /* !--------------- Finishes Main (Home) Styling -------------- */
 
 
-/* !--------------- Starts Cómo lo Hacemos Section Styling -------------- */
+/* !--------------- Starts Qué Hacemos Section Styling -------------- */
 .que-hacemos-section {
-    padding: 70px 0;
+    padding: 80px 0;
     display: flex;
     align-items: center;
 }
@@ -203,5 +203,66 @@ header .navbar .right ul li a:active {
 
 .que-hacemos-section .right img {
     width: 100%;
+}
+/* !--------------- Finishes Qué Hacemos Section Styling -------------- */
+
+
+/* !--------------- Starts Cómo lo Hacemos Section Styling -------------- */
+.como-lo-hacemos {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.como-lo-hacemos .title {
+    font-size: 1.4rem;
+    color: var(--home-button-color);
+    text-align: center;
+}
+.como-lo-hacemos .subtitle {
+    font-size: 3.4rem;
+    color: var(--nav-bar-link);
+    text-align: center;
+}
+.como-lo-hacemos .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.como-lo-hacemos .container .card {
+    min-width: 250px;
+    max-width: 350px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0.1px 0.1px 5px 1px #edf1f8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s all;
+}
+.como-lo-hacemos .container .card:hover {
+    box-shadow: 0.2px 0.2px 5px 5px #edf1f8;
+}
+
+.como-lo-hacemos .container .card img {
+    width: 100%;
+}
+
+.como-lo-hacemos .container .card .card-title {
+    font-size: 2.4rem;
+    color: var(--nav-bar-link);
+    text-align: center;
+}
+
+.como-lo-hacemos .container .card .description {
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-align: center;
 }
 /* !--------------- Finishes Cómo lo Hacemos Section Styling -------------- */
